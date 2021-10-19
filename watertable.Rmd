@@ -11,7 +11,7 @@ output:
   html_document:
     toc: true
     toc_float: true
-    toc_depth: 2
+    toc_depth: 3
 ---
 
 
@@ -25,7 +25,8 @@ In taking such questions into account, it has been put forward that, wells havin
 
 The static water level measurements obtained from the shallow wells (less than 20 m bgs) in the ORMGP database reflect measurements from water wells and/or boreholes drilled between approximately the 1940s and current day. These wells could have been drilled in either wet or dry years/seasons, and therefore, by aggregating these measurements to derive a water table map, can yield a surface that reflects temporal average conditions, at best. Depending upon the hydrogeologic setting, the water table elevation/depth has been observed to vary seasonally from ±1 to ±10 m in the ORMGP area, and therefore higher or lower observations than what is presented on the ORMGP website should be expected. All surfaces have been interpolated to a 100 m x 100 m grid, projected to NAD83 UTM Zone 17.
 
-### Level 0 (WT0) - Interpolation of shallow well static water levels and correction to ground surface (data-driven)
+# Level 0 (WT0) 
+### Interpolation of shallow well static water levels and correction to ground surface (data-driven)
 
 The water table map derived using only data from shallow wells (less than 20 m deep) will reflect the water table; however, in places, the interpolated water table surface is observed to exceed ground surface, most notably in areas of deeper river valleys where there is insufficient well coverage to bring the water table down to the valley bottoms. The water table is corrected by limiting its elevation to 0.5 m below the ground surface. The final water table map produced in this way is named the “Level 0” Water Table (data-driven, referred to as WT0; Figure 1) and is available on the ORMGP web mapping portal.
 
@@ -44,12 +45,13 @@ A derivative of the WT0, the “Depth to WT0” layer, reflects the difference b
 
 
 
-### Level 1 (WT1) -- Level 0 Plus Added Corrections
+# Level 1 (WT1) 
+### Level 0 Plus Added Corrections
 
 Closer examination of the WT0 suggested that there might be ways that the map could be improved using expert knowledge and additional data sources. With the corrections incorporated, the map is named Water Table Level 1 (WT1). Corrections made to WT0 include:
 
-\
-#### Incorporation of Streams
+
+### Incorporation of Streams
 
 Given the interconnectedness of the groundwater and surface water systems across the ORMGP area, as evidenced by the prevalence of perennial streams, it is postulated that, as groundwater discharges to streams, the streams reflect the elevation of the water table. By distributing “stream nodes” at an approximate 500 m spacing along mapped watercourses, elevations are collected as surrogate water table points allowing for the interpolated water table to be constrained in river valleys. 
 
@@ -64,8 +66,8 @@ Figure 4 summarizes the above, displaying how streams of different classes were 
 ![*Figure 4: Summary of how different Strahler Stream Classes were incorporated into the WT1 surface.*](https://raw.githubusercontent.com/OWRC/watertable/main/fig/f4.jpg)\
 *Figure 4: Summary of how different Strahler Stream Classes were incorporated into the WT1 surface.*\
 
-\
-#### Intermediate Depth Wells
+
+### Intermediate Depth Wells
 
 Beneath the Oak Ridges Moraine and in other upland areas, it was found that the WT0 surface remained shallower than what field measurements indicated (e.g., up to 30 m deep in areas of the Ganaraska Forest in the eastern part of the moraine). The WT0 surface beneath the moraine was being constrained by shallow wells on the south and north flanks of the moraine. With the water table being so deep beneath the moraine, there are no data points (\< 20 m deep) available on the moraine itself. The result is a relatively flat, shallow water table surface beneath the moraine. To correct (deepen) the water table surface in the Oak Ridges Moraine area, wells of “intermediate depth” (\< 40 metres) were added as additional water table data points. This methodology is applied all areas where the WT0 was interpolated at a depth of \> 20 metres.
 
