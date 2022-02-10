@@ -1,6 +1,6 @@
 ---
 title: Water Table Fact Sheet
-logo: img/ORMGP_logo.png
+logo: /img/ORMGP_logo.png
 description: Description of the generation of our regional watertable map
 author: Oak Ridges Moraine Groundwater Program
 date: 2021-10-14
@@ -12,7 +12,7 @@ output: html_document
 
 The Oak Ridges Moraine Groundwater Program (ORMGP) has been working on producing a reliable water table map for quite some time. Over the years several versions of the water table surface have been prepared as new information has become available or as the technical mapping methodology has been adjusted. Although it sounds straightforward to interpolate a water table surface, there are a number of factors that make the process difficult.  Here we outline some of the considerations that have gone into creating the water table surfaces (and their derivatives) and can serve as a supplementary document for those that make use of these layers.
 
-There are many factors to be considered in preparing a water table surface.For example, are there perched water table conditions across broad areas that might result in a water table delineation that is too high? How shallow/deep should wells be for the measured static water level to be incorporated into the interpolated water table surface? Are there artesian or high pressure confined aquifers at depth where static water levels would result in erroneous water table mapping? Do streams and waterbodies within the ORMGP area reflect the water table surface?
+There are many factors to be considered in preparing a water table surface. For example, are there perched water table conditions across broad areas that might result in a water table delineation that is too high? How shallow/deep should wells be for the measured static water level to be incorporated into the interpolated water table surface? Are there artesian or high pressure confined aquifers at depth where static water levels would result in erroneous water table mapping? Do streams and waterbodies within the ORMGP area reflect the water table surface?
 
 In taking such questions into account, it has been put forward that, wells having a screened depth of 20 metres below ground surface (mbgs) or less would provide a reasonable reflection of water table conditions across the broad geographic area encompassed by the ORMGP. Over the years, this has been confirmed through comparison to water table elevations derived from numerical models. 
 
