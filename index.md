@@ -6,7 +6,8 @@ date: 2021-10-14
 output: html_document
 ---
 
-* TOC {:toc}
+* TOC
+{:toc}
 
 # Introduction
 
