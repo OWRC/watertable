@@ -6,9 +6,9 @@ date: 2021-10-14
 output: html_document
 ---
 
-{:toc}
+* TOC {:toc}
 
-# Introduction.
+# Introduction
 
 The Oak Ridges Moraine Groundwater Program (ORMGP) has been working on producing a reliable water table map for quite some time. Over the years several versions of the water table surface have been prepared as new information has become available or as the technical mapping methodology has been adjusted. Although it sounds straightforward to interpolate a water table surface, there are a number of factors that make the process difficult.  Here we outline some of the considerations that have gone into creating the water table surfaces (and their derivatives) and can serve as a supplementary document for those that make use of these layers.
 
