@@ -1,12 +1,10 @@
 ---
-title: "Water Table Fact Sheet"
-author: "Oak Ridges Moraine Groundwater Program"
-date: "14/10/2021"
-output: 
-  html_document:
-    toc: true
-    toc_float: true
-    toc_depth: 3
+title: Water Table Fact Sheet
+logo: img/logo.png
+description: Description of the generation of our regional watertable map
+author: Oak Ridges Moraine Groundwater Program
+date: 2021-10-14
+output: html_document
 ---
 
 
