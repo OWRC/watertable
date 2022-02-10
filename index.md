@@ -1,6 +1,6 @@
 ---
 title: Water Table Fact Sheet
-logo: /img/ORMGP_logo.png
+logo: /assets/images/ORMGP_logo.png
 description: Description of the generation of our regional watertable map
 author: Oak Ridges Moraine Groundwater Program
 date: 2021-10-14
