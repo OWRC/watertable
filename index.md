@@ -97,3 +97,5 @@ Based on their objectives, users are encouraged to explore both layers and choos
 *Figure 9: General West-East and North-South cross-sections showing variation of the WT0 and WT1 surfaces in comparison with the ground surface.*
 
 Any interpolated water table surface is an approximation. Field data collected through drilling and groundwater level measurement in shallow wells will be more reliable than ORMGP interpolations.
+
+*Last Modified: 2022-02-25*
