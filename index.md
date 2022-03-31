@@ -100,12 +100,9 @@ Any interpolated water table surface is an approximation. Field data collected t
 
 # Additional Details
 
-[Water Table - Metadata (WT0 and
-WT1)](https://owrc.github.io/metadata/surfaces/water_table.html)Water Table -
-Metadata (WT0 and Wt1)
+[Water Table - Metadata (WT0 and WT1)](https://owrc.github.io/metadata/surfaces/water_table.html)
 
 [Potential Discharge Areas - Metadata
-(WT1-PDA)](https://owrc.github.io/metadata/surfaces/potential_discharge.html)Potential
-Discharges Areas - Metadata
+(WT1-PDA)](https://owrc.github.io/metadata/surfaces/potential_discharge.html)
 
 *Last Modified: 2022-03-31*
