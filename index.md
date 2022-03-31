@@ -98,4 +98,14 @@ Based on their objectives, users are encouraged to explore both layers and choos
 
 Any interpolated water table surface is an approximation. Field data collected through drilling and groundwater level measurement in shallow wells will be more reliable than ORMGP interpolations.
 
-*Last Modified: 2022-02-25*
+# Additional Details
+
+![Water Table - Metadata (WT0 and
+WT1)](https://owrc.github.io/metadata/surfaces/water_table.html)Water Table -
+Metadata (WT0 and Wt1)
+
+![Potential Discharge Areas - Metadata
+(WT1-PDA)](https://owrc.github.io/metadata/surfaces/potential_discharge.html)Potential
+Discharges Areas - Metadata
+
+*Last Modified: 2022-03-31*
