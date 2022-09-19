@@ -54,7 +54,10 @@ Given the interconnectedness of the groundwater and surface water systems across
 
 By constraining the water table to all mapped streams, the water table was observed rise to unreasonable elevations. This was especially the case around lower order streams in upland areas of higher permeability sandy or granular soils like the Oak Ridges Moraine. Through trial and error, streams of Strahler Class 4 or greater were assigned stream nodes used to constrain the water table.
 
-Additional adjustments were made in the Niagara Escarpment and Canadian Shield regions where the topographic variability resulted in the mapped water table being notably deep below the ground surface. To raise the water table surface in these areas, Strahler Class 3 streams and higher were assigned stream nodes for areas west of the brow of the Niagara Escarpment and in areas where the Canadian Shield is exposed at surface.
+Additional adjustments were made in the Niagara Escarpment and Canadian Shield
+regions where the topographic variability resulted in the mapped water table
+being notably deep below the ground surface. To raise the water table surface,
+ Strahler Class 3 and 2 streams (and higher) were assigned stream nodes for areas west of the brow of the Niagara Escarpment and in areas where the Canadian Shield is exposed at surface.
 
 In some areas of poor well density, the incorporation of stream nodes over-constrained the water table surface between deeper river valleys (e.g. between the Rouge River and Don River valleys), resulting in an unreasonably deep watertable. To minimize this type of over-constraint, a density driven methodology was employed to restrict the use of stream nodes in areas of poor well density-(defined as areas having less than three wells within a 1-kilometre radius of a stream node).
 
@@ -68,8 +71,14 @@ Figure 4 summarizes the above, displaying how streams of different classes were 
 
 Beneath the Oak Ridges Moraine and in other upland areas, it was found that the WT0 surface remained shallower than what field measurements indicated (e.g., up to 30 m deep in areas of the Ganaraska Forest in the eastern part of the moraine). The WT0 surface beneath the moraine was being constrained by shallow wells on the south and north flanks of the moraine. With the water table being so deep beneath the moraine, there are no data points (\< 20 m deep) available on the moraine itself. The result is a relatively flat, shallow water table surface beneath the moraine. To correct (deepen) the water table surface in these upland areas, wells of “intermediate depth” (\< 40 metres) were added as additional water table data points. This methodology is applied all areas where the WT0 was interpolated at a depth of \> 20 metres.
 
-![*Figure 5: Areas within which wells of moderate depth (i.e., between 20 and 40 mbgs) are incorporated for interpolation. Outside of the Oak Ridges Moraine (outlined here in orange), these correspond to areas from WT0 that are below 20 mbgs.*](https://raw.githubusercontent.com/OWRC/watertable/main/fig/f5.jpg)\
-*Figure 5: Areas within which wells of moderate depth (i.e., between 20 and 40 mbgs) are incorporated for interpolation. Outside of the Oak Ridges Moraine (outlined here in orange), these correspond to areas from WT0 that are below 20 mbgs.*
+![*Figure 5: Areas within which wells of moderate depth (i.e., between 20 and
+40 mbgs) are incorporated for interpolation. This includes the complete area
+of the Oak Ridges Moraine (outlined here in orange).  Outside of the Oak
+Ridges Moraine, these areas are found to be below 20 mbgs on WT0.*](https://raw.githubusercontent.com/OWRC/watertable/main/fig/f5.jpg)\
+*Figure 5: Areas within which wells of moderate depth (i.e., between 20 and 40
+mbgs) are incorporated for interpolation. This includes the complete area of
+the Oak Ridges Moraine (outlined here in orange).  Outside of the Oak Ridges
+Moraine, these areas are found to be below 20mbgs on WT0.*
 
 The resultant water table surface (the Level 1 surface, WT1), using the Incorporation of Streams and Intermediate Depth Wells methodology is shown in Figure 6.
 
@@ -105,4 +114,4 @@ Any interpolated water table surface is an approximation. Field data collected t
 [Potential Discharge Areas - Metadata
 (WT1-PDA)](https://owrc.github.io/metadata/surfaces/potential_discharge.html)
 
-*Last Modified: 2022-03-31*
+*Last Modified: 2022-09-19*
