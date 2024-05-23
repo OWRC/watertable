@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+type: dataset
+message: "For general use of our interpolated water table and potentiometric surfaces, please cite as below."
+authors:
+  - name: "Oak Ridges Moraine Groundwater Program"
+    alias: "ORMGP"
+    city: Toronto
+    website: oakridgeswater.ca
+title: "Interpolated water table and potentiometric surface"
+date-released: 2022-09-19
+url: "https://github.com/watertable"

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+
+    <meta property="og:title" content="{{ page.title }}"/>
+    {% if page.image %}<meta property="og:image" content="{{ page.image }}"/>{% else %}<meta name="image" property="og:image" content="https://github.com/OWRC/logos/blob/main/ORMGP_logo_no_text.png?raw=true">{% endif %}
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}"/>
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="og:description" content="{% if page.description.size > 10 %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+
+{% seo %}
+    {% include head-custom.html %}
+    <!-- from https://stackoverflow.com/questions/34347818/using-mathjax-on-a-github-page -->
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>   
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$']]
+          }
+        };
+    </script>
+    <!-- https://ryanfb.github.io/etc/2020/04/27/last_modified_dates_for_github_pages_jekyll_posts.html -->
+    <script type="text/javascript">
+      function setModifiedDate() {
+        if (document.getElementById('last-modified')) {
+          fetch("https://api.github.com/repos/{{ site.github.owner_name }}/{{ site.github.repository_name }}/commits?path={{ page.path }}")
+            .then((response) => {
+              return response.json();
+            })
+            .then((commits) => {
+              var modified = commits[0]['commit']['committer']['date'].slice(0,10);
+              if(modified != "{{ page.date | date: '%Y-%m-%d' }}") {
+                document.getElementById('last-modified').textContent = "Last Modified: " + modified;
+              }
+            });
+        }
+      }
+    </script>
+    <style id="logo-styles">
+      img.logo {
+        position: absolute;
+        max-width: 250px;
+        padding: 5px;
+        border: none;
+        box-shadow: none;
+      }
+    </style>
+    <style id="font-size">
+      p.title {
+        font-size: 50px;
+        font-weight: bold;
+      }
+    </style>
+    <style id="font-size">
+      p.subtitle {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    </style>
+    <style id="inner-width">
+      .inner {
+        max-width: 800px;
+      }
+    </style>
+  </head>
+
+  <body onload="setModifiedDate();">
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+      <img class="logo" src="https://raw.githubusercontent.com/OWRC/interpolants/main/images/ORMGP_logo_no_text_bw.png" alt="ORMGPlogo">
+        <header class="inner">
+          {% if site.github.is_project_page %}
+            <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
+          {% endif %}
+
+          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+          <!-- <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2> -->
+          <h2 id="project_tagline">Oak Ridges Moraine Groundwater Program</h2>
+
+          <!-- {% if site.show_downloads %}
+            <section id="downloads">
+              <a class="zip_download_link" href="{{ site.github.zip_url }}">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="{{ site.github.tar_url }}">Download this project as a tar.gz file</a>
+            </section>
+          {% endif %} -->
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <p class="title">{{ page.title }}</p>
+        <p class="subtitle">{{ page.subtitle }}</p>
+        {{ content }}
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">&copy; 2022 <a href="https://www.oakridgeswater.ca/">Oak Ridges Moraine Groundwater Program</a></p>
+        <p>to cite, click <a href="{{ site.github.repository_url }}">here</a> and go to <em>"Cite this repository"</em></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        <p <span id='last-modified'/></p>
+      </footer>
+    </div>
+  </body>
+</html>
